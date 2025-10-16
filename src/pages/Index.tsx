@@ -47,27 +47,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <img 
-            src="https://cdn.poehali.dev/files/8ab2cca3-9cc5-494e-8c04-fa7f1738bf3e.png" 
-            alt="Meyhana" 
-            className="h-12 md:h-16"
-          />
-          <div className="flex gap-6 items-center">
-            <a href="#gallery" className="text-foreground/80 hover:text-foreground transition-colors hidden md:block">Галерея</a>
-            <a href="#booking" className="text-foreground/80 hover:text-foreground transition-colors hidden md:block">Контакты</a>
-            <Button 
-              size="sm"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground"
-              onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Бронировать
-            </Button>
-          </div>
-        </div>
-      </nav>
-
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
