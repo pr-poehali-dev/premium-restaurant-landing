@@ -57,10 +57,10 @@ const Index = () => {
         
         <div className="relative z-10 text-center px-4 animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-light mb-6 tracking-wider text-white">
-            L'ÉLÉGANCE
+            MEYHANA
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 font-light tracking-wide">
-            Искусство изысканной кухни
+            Болгарская кухня и гостеприимство
           </p>
           <Button 
             size="lg"
@@ -289,9 +289,9 @@ const Index = () => {
 
       <footer className="py-12 px-4 md:px-8 bg-secondary/30 border-t border-border">
         <div className="max-w-7xl mx-auto text-center">
-          <h3 className="text-3xl font-light mb-4">L'ÉLÉGANCE</h3>
+          <h3 className="text-3xl font-light mb-4">MEYHANA</h3>
           <p className="text-muted-foreground mb-6">
-            © 2024 L'Élégance Restaurant. Все права защищены.
+            © 2024 Meyhana Restaurant. Все права защищены.
           </p>
           <div className="flex justify-center space-x-6">
             <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
