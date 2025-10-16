@@ -29,19 +29,19 @@ const Index = () => {
 
   const gallery = [
     {
-      url: 'https://cdn.poehali.dev/projects/7c2be36d-56de-4cc0-801b-f90d8485795e/files/6d53a4e2-cad8-4ee7-8083-f346f970d535.jpg',
+      url: 'https://cdn.poehali.dev/projects/7c2be36d-56de-4cc0-801b-f90d8485795e/files/c3c7f1c7-d7f6-4dfb-97b0-8669dbd0c749.jpg',
+      title: 'Уютный зал',
+      description: 'Традиционная болгарская атмосфера'
+    },
+    {
+      url: 'https://cdn.poehali.dev/projects/7c2be36d-56de-4cc0-801b-f90d8485795e/files/887092c3-52e2-42d0-a616-1aa4fde39cb0.jpg',
       title: 'Основной зал',
-      description: 'Элегантная атмосфера для особых моментов'
+      description: 'Аутентичный интерьер в стиле механы'
     },
     {
-      url: 'https://cdn.poehali.dev/projects/7c2be36d-56de-4cc0-801b-f90d8485795e/files/9cd687f6-717c-4021-8c3a-c72b02e5c2b7.jpg',
-      title: 'Барная зона',
-      description: 'Коллекция премиальных напитков'
-    },
-    {
-      url: 'https://cdn.poehali.dev/projects/7c2be36d-56de-4cc0-801b-f90d8485795e/files/646cb374-853b-446c-a25b-86c3fdbd85fb.jpg',
-      title: 'Приватный зал',
-      description: 'Эксклюзивное пространство для VIP-гостей'
+      url: 'https://cdn.poehali.dev/projects/7c2be36d-56de-4cc0-801b-f90d8485795e/files/f41c25b6-992e-4c89-8eee-729b66ac0dad.jpg',
+      title: 'Народный зал',
+      description: 'Традиционные узоры и тёплый свет'
     }
   ];
 
