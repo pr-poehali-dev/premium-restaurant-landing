@@ -62,7 +62,7 @@ const Index = () => {
             className="w-64 md:w-96 mx-auto mb-8 drop-shadow-2xl"
           />
           <p className="text-xl md:text-2xl mb-8 text-gray-200 font-light tracking-wide">
-            Болгарская кухня и гостеприимство
+            вино | еда | танцы
           </p>
           <Button 
             size="lg"
