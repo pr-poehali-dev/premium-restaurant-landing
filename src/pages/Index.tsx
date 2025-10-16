@@ -56,9 +56,11 @@ const Index = () => {
         />
         
         <div className="relative z-10 text-center px-4 animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-light mb-6 tracking-wider text-white">
-            MEYHANA
-          </h1>
+          <img 
+            src="https://cdn.poehali.dev/files/8ab2cca3-9cc5-494e-8c04-fa7f1738bf3e.png" 
+            alt="Meyhana Logo" 
+            className="w-64 md:w-96 mx-auto mb-8 drop-shadow-2xl"
+          />
           <p className="text-xl md:text-2xl mb-8 text-gray-200 font-light tracking-wide">
             Болгарская кухня и гостеприимство
           </p>
