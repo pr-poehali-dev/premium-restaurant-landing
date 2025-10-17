@@ -57,7 +57,7 @@ const Index = () => {
         
         <div className="relative z-10 text-center px-4 animate-fade-in">
           <img 
-            src="https://cdn.poehali.dev/files/8ab2cca3-9cc5-494e-8c04-fa7f1738bf3e.png" 
+            src="https://cdn.poehali.dev/files/01d6d28e-0a68-4712-9501-9ba5cc846be2.png" 
             alt="Meyhana Logo" 
             className="w-64 md:w-96 mx-auto mb-8 drop-shadow-2xl"
           />
