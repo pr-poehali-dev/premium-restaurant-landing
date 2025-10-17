@@ -247,7 +247,7 @@ const Index = () => {
 
             <div className="h-96 md:h-auto min-h-96 rounded-lg overflow-hidden border border-border animate-scale-in">
               <iframe
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A64b07ef215c9c54f45e3d9ff7d3f3d0bc4b06f7de5f0c5d4df5d0c0c1c0c0c0c&amp;source=constructor"
+                src="https://yandex.ru/map-widget/v1/?ll=37.766327%2C55.706088&z=16&pt=37.766327,55.706088,pm2rdm"
                 width="100%"
                 height="100%"
                 frameBorder="0"
