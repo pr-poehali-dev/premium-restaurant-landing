@@ -233,8 +233,8 @@ const Index = () => {
                 <div>
                   <h3 className="text-xl font-medium mb-2">Адрес</h3>
                   <p className="text-muted-foreground">
-                    г. Москва, ул. Пречистенка, д. 12<br />
-                    Метро «Кропоткинская»
+                    г. Москва, ул. Маршала Чуйкова, д. 3<br />
+                    Метро «Кузьминки»
                   </p>
                 </div>
               </div>
