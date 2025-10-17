@@ -77,38 +77,6 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-5xl md:text-6xl font-light mb-6 tracking-wide">Наша атмосфера</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Каждая деталь создана для вашего комфорта и наслаждения
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {gallery.map((item, index) => (
-            <Card 
-              key={index}
-              className="overflow-hidden group cursor-pointer border-border bg-card hover:border-accent transition-all duration-500 animate-scale-in"
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
-              <div className="relative h-80 overflow-hidden">
-                <img
-                  src={item.url}
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-light mb-2">{item.title}</h3>
-                <p className="text-muted-foreground">{item.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-
       <section id="booking" className="py-24 px-4 md:px-8 bg-secondary/30">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
