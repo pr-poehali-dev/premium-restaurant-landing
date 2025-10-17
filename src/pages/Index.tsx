@@ -246,7 +246,7 @@ const Index = () => {
                 <div>
                   <h3 className="text-xl font-medium mb-2">Телефон</h3>
                   <p className="text-muted-foreground">
-                    +7 (495) 123-45-67<br />
+                    +7 (495) 114-21-00<br />
                     Ежедневно с 12:00 до 23:00
                   </p>
                 </div>
