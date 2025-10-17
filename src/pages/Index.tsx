@@ -64,6 +64,9 @@ const Index = () => {
           <p className="text-xl md:text-2xl mb-8 text-gray-200 font-light tracking-wide">
             вино | еда | танцы
           </p>
+          <p className="text-lg md:text-xl mb-8 text-gray-300 font-light">
+            Здесь скоро будет новый и красивый сайт
+          </p>
           <Button 
             size="lg"
             className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-6 text-lg transition-all duration-300 hover:scale-105"
