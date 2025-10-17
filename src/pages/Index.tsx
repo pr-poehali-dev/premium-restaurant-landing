@@ -79,7 +79,7 @@ const Index = () => {
 
       <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-5xl md:text-6xl font-light mb-6">Наша атмосфера</h2>
+          <h2 className="text-5xl md:text-6xl font-light mb-6 tracking-wide">Наша атмосфера</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Каждая деталь создана для вашего комфорта и наслаждения
           </p>
