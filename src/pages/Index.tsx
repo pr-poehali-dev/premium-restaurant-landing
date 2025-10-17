@@ -259,7 +259,7 @@ const Index = () => {
                 <div>
                   <h3 className="text-xl font-medium mb-2">Email</h3>
                   <p className="text-muted-foreground">
-                    info@elegance-restaurant.ru
+                    go@meyhana.ru
                   </p>
                 </div>
               </div>
