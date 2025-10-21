@@ -72,10 +72,15 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     msg.attach(MIMEText(html_content, 'html'))
     
     try:
-        with smtplib.SMTP(email_host, email_port, timeout=5) as server:
+        if email_port == 465:
+            server = smtplib.SMTP_SSL(email_host, email_port, timeout=10)
+        else:
+            server = smtplib.SMTP(email_host, email_port, timeout=10)
             server.starttls()
-            server.login(email_user, email_password)
-            server.send_message(msg)
+        
+        server.login(email_user, email_password)
+        server.send_message(msg)
+        server.quit()
     except Exception as e:
         return {
             'statusCode': 500,

@@ -18,10 +18,29 @@ const Index = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success('Спасибо! Мы свяжемся с вами в ближайшее время для подтверждения бронирования.');
-    setFormData({ name: '', phone: '', date: '', time: '', guests: '', message: '' });
+    
+    try {
+      const response = await fetch('https://functions.poehali.dev/af2b84ed-03a7-439b-8a05-f1d41e2aa3c2', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      const data = await response.json();
+      
+      if (response.ok && data.success) {
+        toast.success('Спасибо! Мы свяжемся с вами в ближайшее время для подтверждения бронирования.');
+        setFormData({ name: '', phone: '', date: '', time: '', guests: '', message: '' });
+      } else {
+        toast.error('Произошла ошибка при отправке заявки. Пожалуйста, позвоните нам.');
+      }
+    } catch (error) {
+      toast.error('Произошла ошибка при отправке заявки. Пожалуйста, позвоните нам.');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
