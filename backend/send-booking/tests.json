@@ -1,0 +1,22 @@
+{
+  "tests": [
+    {
+      "name": "Test booking email send",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Иван Петров",
+        "phone": "+7 (999) 123-45-67",
+        "date": "2025-10-25",
+        "time": "19:00",
+        "guests": "4",
+        "message": "Столик у окна"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
