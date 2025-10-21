@@ -6,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import Icon from '@/components/ui/icon';
 import { toast } from 'sonner';
+import InputMask from 'react-input-mask';
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -104,16 +105,24 @@ const Index = () => {
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="phone">Телефон</Label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
+                    <InputMask
+                      mask="+7 (999) 999-99-99"
                       value={formData.phone}
                       onChange={handleChange}
-                      required
-                      className="bg-background border-border"
-                      placeholder="+7 (___) ___-__-__"
-                    />
+                    >
+                      {/* @ts-ignore */}
+                      {(inputProps) => (
+                        <Input
+                          {...inputProps}
+                          id="phone"
+                          name="phone"
+                          type="tel"
+                          required
+                          className="bg-background border-border"
+                          placeholder="+7 (___) ___-__-__"
+                        />
+                      )}
+                    </InputMask>
                   </div>
                 </div>
 
