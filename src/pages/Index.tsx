@@ -92,6 +92,11 @@ const Index = () => {
           >
             Забронировать столик
           </Button>
+          <p className="text-lg md:text-xl mt-6 text-gray-300 font-light">
+            <a href="tel:+74951142100" className="hover:text-accent transition-colors">
+              +7 495 114-21-00
+            </a>
+          </p>
         </div>
       </section>
 
