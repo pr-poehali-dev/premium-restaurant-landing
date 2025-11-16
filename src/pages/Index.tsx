@@ -31,14 +31,17 @@ const Index = () => {
       });
       
       const data = await response.json();
+      console.log('Response:', response.status, data);
       
       if (response.ok && data.success) {
         toast.success('Спасибо! Мы свяжемся с вами в ближайшее время для подтверждения бронирования.');
         setFormData({ name: '', phone: '', date: '', time: '', guests: '', message: '' });
       } else {
+        console.error('Error:', data);
         toast.error('Произошла ошибка при отправке заявки. Пожалуйста, позвоните нам.');
       }
     } catch (error) {
+      console.error('Fetch error:', error);
       toast.error('Произошла ошибка при отправке заявки. Пожалуйста, позвоните нам.');
     }
   };
