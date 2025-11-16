@@ -76,9 +76,11 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     try:
         if email_port == 465:
             server = smtplib.SMTP_SSL(email_host, email_port, timeout=10)
+            server.set_debuglevel(1)
             server.login(email_user, email_password)
         else:
             server = smtplib.SMTP(email_host, email_port, timeout=10)
+            server.set_debuglevel(1)
             server.starttls()
             server.login(email_user, email_password)
         
@@ -91,7 +93,13 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*'
             },
-            'body': json.dumps({'success': False, 'error': str(e)})
+            'body': json.dumps({
+                'success': False, 
+                'error': str(e),
+                'host': email_host,
+                'port': email_port,
+                'user': email_user
+            })
         }
     
     return {
