@@ -45,8 +45,8 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     guests = body_data.get('guests', '')
     message = body_data.get('message', '')
     
-    email_host = os.environ.get('EMAIL_HOST')
-    email_port = int(os.environ.get('EMAIL_PORT', '587'))
+    email_host = os.environ.get('EMAIL_HOST', 'smtp.beget.com')
+    email_port = 587
     email_user = os.environ.get('EMAIL_USER')
     email_password = os.environ.get('EMAIL_PASSWORD')
     
