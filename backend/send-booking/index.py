@@ -7,7 +7,7 @@ from typing import Dict, Any
 
 def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     '''
-    Business: Send booking request to manager email
+    Business: Send booking request to manager email via SMTP
     Args: event - dict with httpMethod, body containing booking data
           context - object with request_id attribute
     Returns: HTTP response dict
