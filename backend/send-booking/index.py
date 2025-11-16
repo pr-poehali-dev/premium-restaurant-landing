@@ -50,10 +50,12 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     email_user = os.environ.get('EMAIL_USER')
     email_password = os.environ.get('EMAIL_PASSWORD')
     
+    recipient_email = os.environ.get('RECIPIENT_EMAIL', 'manager@meyhana.ru')
+    
     msg = MIMEMultipart('alternative')
     msg['Subject'] = f'Новая бронь от {name}'
     msg['From'] = email_user
-    msg['To'] = 'manager@meyhana.ru'
+    msg['To'] = recipient_email
     
     html_content = f'''
     <html>
